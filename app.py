@@ -116,7 +116,7 @@ def main():
     # Multiline text input for multiple URLs
     urls_input = st.text_area(
         "Enter URLs (one per line):",
-        "https://www.saretskygroup.com/homes-for-sale-details/17328-0A-AVENUE-WHITE-ROCK-BC-V3Z-9P3/R2945562/279/\nhttps://www.example.com/page2\nhttps://www.example.com/page3"
+        ""
     )
 
     if st.button("Scrape and Generate CSV"):
