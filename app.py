@@ -1,5 +1,14 @@
 # app.py
 
+import subprocess
+
+# Install Playwright browsers
+try:
+    subprocess.run(["playwright", "install"], check=True)
+except subprocess.CalledProcessError:
+    pass  # Handle errors if necessary
+
+
 import streamlit as st
 import pandas as pd
 from scraper import scrape_shadow_dom
