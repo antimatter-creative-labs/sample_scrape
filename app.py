@@ -18,6 +18,7 @@ from playwright.sync_api import sync_playwright
 ACF_FIELD_MAPPING = {
     "listing_price": "price",
     "listing_address": "address",
+    "description": "description",
     "bedrooms": "bedrooms",
     "bathrooms": "bathrooms",
     "size": "square_feet",
