@@ -38,7 +38,8 @@ def scrape_shadow_dom(page, url):
                 return {
                     listing_number: shadowRoot.querySelector('.listing-number p')?.innerText || "N/A",
                     price: shadowRoot.querySelector('.list-price span:last-of-type')?.innerText || "N/A",
-                    address: (shadowRoot.querySelector('.listing-address-1')?.innerText || "") + ', ' + (shadowRoot.querySelector('.listing-address-2')?.innerText || "N/A"),
+                    address: (shadowRoot.querySelector('.listing-address-1')?.innerText || "N/A"),
+                    address_2: (shadowRoot.querySelector('.listing-address-2')?.innerText || "N/A"),
                     bedrooms: shadowRoot.querySelector('.bedrooms p')?.innerText || "N/A",
                     bathrooms: shadowRoot.querySelector('.bathrooms p')?.innerText || "N/A",
                     square_feet: shadowRoot.querySelector('.square-feet p')?.innerText || "N/A",

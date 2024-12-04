@@ -18,6 +18,7 @@ from playwright.sync_api import sync_playwright
 ACF_FIELD_MAPPING = {
     "listing_price": "price",
     "listing_address": "address",
+    "listing_address_2": "address_2",
     "description": "description",
     "bedrooms": "bedrooms",
     "bathrooms": "bathrooms",
@@ -28,7 +29,7 @@ ACF_FIELD_MAPPING = {
     "taxes": "taxes",        # Ensure this field is scraped
     "fees": "fees",          # Ensure this field is scraped
     "features_&_amenities": "features",
-    "mls": "mls",            # Ensure this field is scraped
+    "mls": "listing_number", # Ensure this field is scraped
     "type": "type",          # Mapping required
     "subtype": "subtype",    # Mapping required
     "gallery": "images"      # From 'images'
